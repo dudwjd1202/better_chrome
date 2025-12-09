@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "웹사이트 사용 시간 & 기회비용 분석기",
+  "description": "방문한 웹사이트별 사용 시간을 측정하고 기회비용과 집중도를 분석합니다",
+  "version": "2.0.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "idle"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

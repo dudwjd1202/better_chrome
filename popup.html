@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹사이트 사용 시간 & 기회비용</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏰ 시간 & 기회비용 분석</h1>
+    
+    <!-- 시급 설정 영역 -->
+    <div class="wage-setting">
+      <label for="hourly-wage">💰 내 시급 (원)</label>
+      <div class="wage-input-group">
+        <input type="number" id="hourly-wage" placeholder="예: 15000" min="0">
+        <button id="save-wage-button" class="save-wage-button">저장</button>
+      </div>
+    </div>
+    
+    <!-- 대시보드 영역 -->
+    <div class="dashboard">
+      <h2>📊 오늘의 집중도 요약</h2>
+      <div class="dashboard-stats">
+        <div class="stat-box">
+          <div class="stat-label">총 사용 시간</div>
+          <div class="stat-value" id="total-time">0초</div>
+        </div>
+        <div class="stat-box cost-box">
+          <div class="stat-label">💸 총 손실 비용</div>
+          <div class="stat-value cost-highlight" id="total-cost">0원</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">🔄 탭 전환 횟수</div>
+          <div class="stat-value" id="switch-count">0회</div>
+          <div class="focus-alert" id="focus-alert"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 사이트별 통계 영역 -->
+    <div class="stats-container">
+      <h3>📈 사이트별 상세 분석</h3>
+      <div id="stats-list"></div>
+      <div id="no-data" class="no-data" style="display: none;">
+        아직 측정된 데이터가 없습니다.
+      </div>
+    </div>
+    
+    <div class="button-container">
+      <button id="clear-button" class="clear-button">🗑️ 기록 삭제</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

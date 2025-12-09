@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.container {
+  background: white;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* 시급 설정 영역 */
+.wage-setting {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.wage-setting label {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.wage-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.wage-input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.save-wage-button {
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.save-wage-button:hover {
+  background-color: #38a169;
+}
+
+/* 대시보드 영역 */
+.dashboard {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dashboard h2 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat-box {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cost-box {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.cost-box .stat-label {
+  color: #333;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.cost-highlight {
+  color: #dc2626;
+  font-size: 22px;
+}
+
+.focus-alert {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 700;
+  display: none;
+}
+
+/* 사이트별 통계 영역 */
+.stats-container {
+  margin-bottom: 16px;
+}
+
+.stats-container h3 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+#stats-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #4285f4;
+  transition: all 0.2s ease;
+}
+
+.stat-item:hover {
+  background-color: #e8f0fe;
+  transform: translateX(4px);
+}
+
+.domain-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  min-width: 0;
+}
+
+.favicon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.domain {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.time {
+  font-size: 12px;
+  color: #5f6368;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cost {
+  font-size: 14px;
+  color: #dc2626;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-size: 14px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.clear-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
+
+.clear-button:active {
+  transform: scale(0.98);
+}
+
+/* 스크롤바 스타일 */
+#stats-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#stats-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+#stats-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+#stats-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
