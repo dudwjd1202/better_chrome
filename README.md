@@ -1,4 +1,4 @@
-<img width="398" height="599" alt="스크린샷 2025-12-09 오후 3 17 04" src="https://github.com/user-attachments/assets/e59c0ea9-02d8-48ad-951a-e81c0a884dcf" /># ⏰ 웹사이트 사용 시간 & 기회비용 분석기
+# ⏰ 웹사이트 사용 시간 & 기회비용 분석기
 
 
 ## 📌 프로젝트 소개
@@ -39,6 +39,14 @@
 - 🎨 그라디언트 디자인으로 시각적 강조
 - 🖼️ 각 사이트의 파비콘 표시
 - 📱 사용 시간 기준 내림차순 정렬
+
+
+## UI 스크린샷
+<img width="398" height="599" alt="스크린샷 2025-12-09 오후 3 17 04" src="https://github.com/user-attachments/assets/8d275e29-bf9f-4ef5-879a-105cf9ea0216" />
+<img width="398" height="599" alt="스크린샷 2025-12-09 오후 2 49 01" src="https://github.com/user-attachments/assets/f846edee-b1cd-4f0e-b860-376256a8817d" />
+
+
+
 
 ## 🚀 설치 방법
 
