@@ -1,4 +1,4 @@
-# ⏰ 웹사이트 사용 시간 & 기회비용 분석기
+<img width="398" height="599" alt="스크린샷 2025-12-09 오후 3 17 04" src="https://github.com/user-attachments/assets/e59c0ea9-02d8-48ad-951a-e81c0a884dcf" /># ⏰ 웹사이트 사용 시간 & 기회비용 분석기
 
 
 ## 📌 프로젝트 소개
@@ -149,17 +149,6 @@ function calculateCost(seconds, hourlyWage) {
   return Math.floor(hours * hourlyWage);
 }
 ```
-
-## 🎨 UI 스크린샷
-
-### 시급 설정 화면
-![시급 설정](https://via.placeholder.com/400x150/667eea/ffffff?text=💰+시급+설정+화면)
-
-### 대시보드
-![대시보드](https://via.placeholder.com/400x200/f6d365/333333?text=📊+오늘의+집중도+요약)
-
-### 사이트별 분석
-![사이트별 분석](https://via.placeholder.com/400x300/4285f4/ffffff?text=📈+사이트별+상세+분석)
 
 ## 🔒 개인정보 보호
 
